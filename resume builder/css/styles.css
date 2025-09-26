@@ -1,0 +1,138 @@
+body {
+    background: #b0e0e6;
+    font-family: 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.resume-box {
+    background: #fff;
+    border-radius: 18px;
+    min-height: 640px;
+    box-shadow: 0 5px 28px rgba(44, 62, 80, 0.13);
+    color: #23324e;
+    font-size: 1.08em;
+}
+
+.resume-title {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.resume-contact {
+    color: #278bc5;
+    margin-bottom: 6px;
+}
+
+.resume-summary {
+    font-size: 1.07em;
+    color: #3d4c5f;
+    border-left: 4px solid #b0e0e6;
+    padding-left: 13px;
+    margin-bottom: 12px;
+}
+
+.resume-section {
+    margin-top: 28px;
+}
+
+.resume-section h5 {
+    font-weight: bold;
+    color: #278bc5;
+    margin-bottom: 10px;
+}
+
+.resume-subtitle {
+    font-weight: 600;
+    color: #253c62;
+}
+
+.resume-dates {
+    font-size: 0.96em;
+    color: #86b6d3;
+}
+
+.resume-desc {
+    font-size: 1em;
+    color: #457189;
+}
+
+.resume-skills span {
+    background: #b0e0e6;
+    color: #145466;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 3px 11px;
+    margin: 3px 3px 3px 0;
+    display: inline-block;
+}
+
+form input,
+form textarea {
+    border-radius: 10px !important;
+    border: 1px solid #dbeef7;
+}
+
+.btn-outline-info {
+    border-radius: 1.7em !important;
+    border: 1px solid #76c8e6;
+    color: #278bc5;
+}
+
+.btn-outline-info:hover,
+.btn-success {
+    background: #b0e0e6;
+    color: #116190;
+    border: 1px solid #45b2bb;
+}
+
+.btn-success {
+    background-image: linear-gradient(
+        90deg,
+        #b0e0e6 40%,
+        #a7d3e7 100%
+    );
+    box-shadow: 0 2px 8px #adc9dd40;
+    border: none;
+    color: #116190;
+    font-weight: bold;
+}
+
+#comparison-feedback ul {
+    padding-left: 20px;
+}
+
+#comparison-feedback li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 500px) {
+    .resume-box {
+        font-size: 0.98em;
+        padding: 16px 5px !important;
+    }
+}
+
+@media print {
+    body,
+    html {
+        background: #fff !important;
+    }
+    .resume-box {
+        box-shadow: none !important;
+    }
+    .btn,
+    form,
+    #add-education,
+    #add-exp,
+    #compare-button,
+    #comparison-feedback {
+        display: none !important;
+    }
+    #resume-preview {
+        margin: 0 !important;
+    }
+    .container-fluid {
+        padding: 0 !important;
+    }
+}
